@@ -1,0 +1,52 @@
+api call in js
+--------------
+
+AJAX
+
+-XMLhttp
+-fetch
+-async await
+
+redirection In react
+--------------------
+
+react-router-dom
+
+        -npm i react-router-dom
+
+
+import { 
+    BrowserRouter as Router,  - all routing need components
+    Routes                    - to set path for each component
+    ,Route                    - morethan one path
+     } from 'react-router-dom';
+
+
+useParams      - hook used to access params from component url
+
+
+REDUX
+------
+
+coupling  - many connection between parent and child component
+
+props drilling - any coupling if any intermediate component have any errors all other childs will not work
+
+to avoid props drilling we need to reduce coupling and make all the components independent 
+
+for this react introduced a new technology - state management technology - 
+
+redux process
+---------------
+
+create a new js file to keep states ,all the components can access the js file
+
+-the components can access the datas from the js file but they can't update datas in js file
+
+- Action -> a file with all the logics to update the state
+-Dispatch -> method used to dispatch the logic in action file when the component need state updation
+-Reducer -> update the datas in js file according to the payload response get from action file
+
+
+
+libraraies
